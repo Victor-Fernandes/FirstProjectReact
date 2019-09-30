@@ -1,0 +1,29 @@
+import { createGlobalStyle } from 'styled-components';
+
+export default createGlobalStyle`
+  *{/**Evita quebra d layout */
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+
+  html, body, #root {/**Altura total da página */
+    min-height: 100%;
+  }
+
+  body {
+    background: #7159c1; /**Deixa font mais definida */
+    -webkit-font-smoothing: antialiased !important;
+  }
+
+  body, input, button {
+    color: #222;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  button: {
+    cursor: pointer;
+  }
+`;
