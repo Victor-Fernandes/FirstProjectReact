@@ -4,8 +4,8 @@ module.exports = {
     es6: true,
   },
   extends: [
+    'plugin:react/recommended',
     'airbnb',
-    'prettier',
     'prettier/react'
   ],
   globals: {
@@ -25,12 +25,10 @@ module.exports = {
     'prettier'
   ],
   rules: {
-    'prettier/prettier' : 'error',
+    'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
       'warn',
-      {
-        extensions: ['.jsx', '.js']
-      }
+      { extensions: ['.jsx', '.js']}
     ],
     'import/prefer-default-export': 'off'
   },
